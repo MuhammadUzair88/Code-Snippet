@@ -20,7 +20,8 @@ import React from 'react'
   snippets.map((snippet)=>(
     <div key={snippet.id} className='border-b p-4'>
       <h2 className='text-lg font-semibold'>{snippet.title}</h2>
-      <pre className='bg-gray-100 p-2 rounded mt-2 overflow-x-auto'>{snippet.code}</pre>
+      
+      <Link href={`/snippet/${snippet.id}`} className='text-blue-500 hover:underline'>View Details</Link>
     </div>
   ))
 }
